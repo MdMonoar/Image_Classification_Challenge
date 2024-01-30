@@ -1,21 +1,21 @@
-<h1 align='center'>Self Supervised Deblurring</h1>
+<h1 align='center'>Image Classification Model Challenge</h1>
 <p align='justify'>
-In this project a self supervised deblurring model was built for deblurring blurred images. Then a semantic segmentation model was applied to segment different objects.
+In this project the challenge was to built a image classifier model and gain as much accuracy as possible without using any popluar architecture or augmentation.
 </p>
 
 ## Data
 <p align='justify'>
-A popular dataset named CamVid(Cambridge-Driving Labeled Video Database) was used for this project and was taken from popular data repository Kaggle. It consists of over 700 images and masks for semantic segmentation. 
-The images and masks were seperated in training, validation and testing sets. The ground truth label associate each pixel with one of 32 semantic classes.
+Popular Cifar10 dataset was used for this project. The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
 </p>
 
-## Usage
-It can be used to dblur blurry images.
+## Challenges: 
+- Take 5000 images for training and 5000 images for validation from randomly shuffled indeces, test sample remained untouched
+- Make a model from scratch, without using any popular architecture (eg. VGGNet, ResNet, DenseNet etc.) 
+- Do not use any data augmentation
+- Achieve as much accuracy as possible just by making change in the model architecture, shuffling the layer and changing the parameters of the layers.
 
-## Procedure
-- A blur function was built which applies random level of gaussian blurring to each image 
-- All images were blurred using the blur function
-- Then the training and validation images were blurred again.This batch was used for training the self-supervised model and the previous batch was as ground truth 
-- A self supervied deblurring model was built and trained
-- Test images were deblurred using the trained model
-- The performance of the segmentation model(previously made) was comapred with original test images and newly deblurred images.
+## Result & Conclusion:
+I built several different models and achieved maximum training accuracy of 95.96% and validation accuracy of 66.7%. The model is clearly overfitting. One obvious cause is the splitting of the dataset was not controlled. The train and validation set was created from randomly generated indeces. This was intentional to create a scenario mimicing real world data, where we cannot always ensure equal distribution of data for each class.
+
+## Future Plan:
+We can comapre the models performance after training it on a controlled split of the dataset. Also we can use data augmentation and other optimization methods to see how they affect the models performance.
