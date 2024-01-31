@@ -9,7 +9,7 @@ Popular Cifar10 dataset was used for this project. The CIFAR-10 dataset consists
 </p>
 
 ## Challenges: 
-- Take 5000 images for training and 5000 images for validation from randomly shuffled indeces, test sample remained untouched
+- Take 5000 images for training and 5000 images for validation from randomly shuffled indeces, test sample remains untouched
 - Make a model from scratch, without using any popular architecture (eg. VGGNet, ResNet, DenseNet etc.) 
 - Do not use any data augmentation
 - Achieve as much accuracy as possible just by making change in the model architecture, shuffling the layer and changing the parameters of the layers.
