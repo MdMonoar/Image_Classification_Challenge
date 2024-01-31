@@ -8,6 +8,9 @@ In this project the challenge was to built a image classifier model and gain as 
 Popular Cifar10 dataset was used for this project. The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
 </p>
 
+## Tools
+TensofFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, Kaggle
+
 ## Challenges: 
 - Take 5000 images for training and 5000 images for validation from randomly shuffled indeces, test sample remains untouched
 - Make a model from scratch, without using any popular architecture (eg. VGGNet, ResNet, DenseNet etc.) 
