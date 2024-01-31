@@ -18,6 +18,7 @@ TensofFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, Kaggle
 - Achieve as much accuracy as possible just by making change in the model architecture, shuffling the layer and changing the parameters of the layers.
 
 ## Result & Conclusion:
+![Accuracy](~/images/training_vs_validation_accuracy.png)
 I built several different models and achieved maximum training accuracy of 95.96% and validation accuracy of 66.7%. The model is clearly overfitting. One obvious cause is the splitting of the dataset was not controlled. Training set and validation set was created from randomly generated indeces. This was intentional to create a scenario mimicing real world data, where we cannot always ensure equal distribution of data for each class.
 
 ## Future Plan:
